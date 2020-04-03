@@ -482,6 +482,35 @@ animation: tada 1s;
   line-height: 16px;
 }
 
+.wrapper-categories {
+  display:grid;
+  grid-template-columns: repeat(6,1fr); 
+  grid-gap: 16px;
+  height: 160px;
+  
+}
+.wrapper-categories .categories-link {
+  text-decoration: none;
+  width: 100%;
+  background-color: #fff;
+  align-items: center;  
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.25);
+  border-radius: 4px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper-categories .categories-link span {
+  margin-top: 10px;
+  color: #333;
+}
+.wrapper-categories .categories-link .img {
+  height: 96px;
+  width: 96px;
+}
+.wrapper-categories .categories-link img {
+  width: 100%
+}
 @keyframes tada {
   from {
     -webkit-transform: scale3d(1, 1, 1);
