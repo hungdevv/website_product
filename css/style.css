@@ -522,6 +522,81 @@ animation: tada 1s;
 .wrapper-categories .categories-link img {
   width: 100%
 }
+
+.card-item-today {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  height: 335px;
+}
+.card-item-today .link {
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.card-item-today .link .img-card {
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+} 
+.card-item-today .link .card-h {
+  color: #a90b26;
+  font-size: 12px;
+  line-height: 14px;
+  min-height: 14px;
+  margin: 2px 0;
+}
+.wrapper-content-card {
+  text-align: center;
+  font-size: 14px;
+  height: 36px;
+  line-height: 18px;
+  color: #212121;
+}
+.card-item-today .price-card {
+  line-height: 22px;
+  height: 22px;
+  font-size: 18px;
+  color: #f57224;
+}
+.price-card-sale {
+  margin-top: 4px;
+    margin-right: 4px;
+    line-height: 14px;
+    height: 14px;
+    color: #9e9e9e;
+    font-size: 12px;
+}
+.price-card-sale .price {
+  text-decoration: line-through;
+}
+.price-card-sale .discount {
+  color: #212121;
+    opacity: .8;
+    margin-left: 4px;
+}
+.card-today-footer {
+  display: flex;
+  margin-top: 8px;
+  height: 14px;
+  font-size: 12px;
+}
+.card-today-footer .icon-today {
+  color: #faca51;
+}
+.card-today-footer .comment-today {
+  color: #9e9e9e;
+}
+.card-today-footer .nation-today {
+  margin-left: 20px;
+  color:  #9e9e9e;
+}
+.wrapper-footer {
+  margin-left: 6px;
+}
 @keyframes tada {
   from {
     -webkit-transform: scale3d(1, 1, 1);
