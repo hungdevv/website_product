@@ -352,7 +352,7 @@ animation: tada 1s;
   position: relative;
 
 }
-.flashSale-car-item:hover .wrapper-carousel{
+.flashSale-car-item:hover >.wrapper-carousel{
   visibility: visible;
   transform: scale(1.5,1.5); 
 }
@@ -389,6 +389,12 @@ animation: tada 1s;
 }
 .wrapper-carousel-r {
   right: 70px ;
+}
+.wcl {
+  left: -12px;
+}
+.wcr {
+  right: -12px;
 }
 
 .flashSale-car-item a {
@@ -487,7 +493,12 @@ animation: tada 1s;
   grid-template-columns: repeat(6,1fr); 
   grid-gap: 16px;
   height: 160px;
+  position: relative;
   
+}
+.wrapper-categories:hover .wrapper-carousel {
+  visibility: visible;
+  transform: scale(1.5,1.5); 
 }
 .wrapper-categories .categories-link {
   text-decoration: none;
