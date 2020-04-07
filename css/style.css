@@ -188,6 +188,9 @@ body {
   transition-property: background-color, color;
   display: none;
 }
+#social-nav.active-nav {
+  left: -34px;
+}
 .btnEntrance {
   animation-duration: 0.5s;
   animation-fill-mode: both;
@@ -243,7 +246,7 @@ body {
 #social-nav .nav-toggler {
   position: absolute;
   cursor: pointer;
-  background-color: #3b5998;
+  background-color: #004eff;
   font-size: 10px;
   display: flex;
   width: 20px;
@@ -607,8 +610,8 @@ body {
 .card-item-today .link {
   text-decoration: none;
   background-color: #fff;
+  transition: all 0.25s ease-in-out;
 }
-
 .card-item-today .card-item-like::before {
   content: "";
   position: absolute;
@@ -629,6 +632,9 @@ body {
   background-size: contain;
   height: 190px;
   width: 190px;
+}
+.card-item-today .link:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .card-item-today .link .card-h {
   color: #a90b26;

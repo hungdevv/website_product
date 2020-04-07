@@ -83,7 +83,12 @@ document.addEventListener(
 
     //social-nav
     var socialNav = document.querySelector("#social-nav");
+    var togglerNav = document.querySelector(".nav-toggler");
+    togglerNav.addEventListener("click", togglerFunction);
     window.addEventListener("scroll", scrollFunction);
+    function togglerFunction() {
+      socialNav.classList.toggle("active-nav");
+    }
     function scrollFunction() {
       if (window.pageYOffset > 300) {
         // Show backToTopButton
@@ -104,6 +109,7 @@ document.addEventListener(
       }
     }
 
+    //  back to top
     var backToTopButton = document.querySelector("#back-to-top-btn");
 
     window.addEventListener("scroll", scrollFunctionn);
