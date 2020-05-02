@@ -81,16 +81,21 @@ document.addEventListener(
       x.style.opacity = 1;
     }
 
+    var menuHeader = document.querySelector("#menu-header");
+
     //social-nav
     var socialNav = document.querySelector("#social-nav");
     var togglerNav = document.querySelector(".nav-toggler");
     togglerNav.addEventListener("click", togglerFunction);
     window.addEventListener("scroll", scrollFunction);
+
     function togglerFunction() {
       socialNav.classList.toggle("active-nav");
     }
+
     function scrollFunction() {
       if (window.pageYOffset > 300) {
+        menuHeader.classList.add("fixed-header");
         // Show backToTopButton
         if (!socialNav.classList.contains("btnEntrance")) {
           socialNav.classList.remove("btnExit");
